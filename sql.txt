@@ -1,0 +1,23 @@
+CREATE TABLE `banking`.`logbook` (
+  `accountnumber` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `address` VARCHAR(45) NULL,
+  `state` VARCHAR(45) NULL,
+  `city` VARCHAR(45) NULL,
+  `pincode` INT NULL,
+  `cashdeposit` FLOAT NULL,
+  `cashwithdraw` FLOAT NULL,
+  `balance` FLOAT NULL,
+  PRIMARY KEY (`accountnumber`));
+
+
+
+
+
+CREATE TABLE `banking`.`transactiondetails` (
+  `AccNum` INT NOT NULL,
+  `cahdeposit` FLOAT NULL,
+  `cashwithdraw` FLOAT NULL,
+  `balance` FLOAT NULL,
+  `Date1` DATE NULL,
+  PRIMARY KEY (`AccNum`));
